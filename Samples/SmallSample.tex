@@ -1,0 +1,57 @@
+\documentclass[stu, 12pt, floatsintext]{apa7}
+
+\usepackage[canadian]{babel}
+\usepackage{url}
+
+\usepackage{csquotes}
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\DeclareLanguageMapping{canadian}{american-apa}
+\addbibresource{bibliography.bib}
+
+\usepackage{mathtools}
+\usepackage{spreadtab}
+
+\usepackage{hyperref}
+\usepackage[all]{hypcap}
+
+\usepackage{fcolumn}
+\DeclareOption{strict}{\strict@ccountingtrue}
+\ProcessOptions
+
+\tolerance=1	%	Remove hyphenation
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\usepackage[smartEllipses]{markdown}
+
+\title{}
+% \shorttitle{WPenner}
+
+\authorsnames{Wesley D. Penner}
+\affiliation{University of Fredericton}
+\course{Markdown to \LaTeX}
+\professor{Dr. Typeitrite}
+\duedate{May 13, 2021}
+
+\leftheader{Penner}
+
+\abstract{A sample document to demonstrate how to use the template to turn a Markdown file into a beautifully formatted PDF.}
+%
+\keywords{APA style, LaTeX, BibTeX, BibLaTeX}
+
+\begin{document}
+\maketitle
+%	-----------------------------------------------------------------------------
+
+
+\input{_SmallSample.tex}
+
+
+
+
+%	-----------------------------------------------------------------------------
+
+\newpage
+\printbibliography
+\end{document}

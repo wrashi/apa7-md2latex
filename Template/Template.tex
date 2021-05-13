@@ -1,0 +1,56 @@
+\documentclass[stu, 12pt, floatsintext]{apa7}
+% More info here: http://mirrors.ctan.org/macros/latex/contrib/apa7/apa7.pdf
+
+\usepackage[canadian]{babel}
+\usepackage{url}
+
+\usepackage{csquotes}
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\DeclareLanguageMapping{canadian}{american-apa}
+\addbibresource{bibliography.bib}
+
+\usepackage{mathtools}
+\usepackage{spreadtab}
+
+\usepackage{hyperref}
+\usepackage[all]{hypcap}
+
+\usepackage{fcolumn}
+\DeclareOption{strict}{\strict@ccountingtrue}
+\ProcessOptions
+
+\tolerance=1	%	Remove hyphenation
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\title{Template}
+% \shorttitle{WPenner}
+
+\authorsnames{FULLNAME}
+\affiliation{University of Fredericton}
+\course{EMBA 7035 - Strategic Marketing Planning}
+\professor{Dr. PROFNAME}
+\duedate{May 12, 2021}
+
+\leftheader{LASTNAME}
+
+% \abstract{ABSTRACT HERE}
+%
+% \keywords{APA style, Global Economic Environment}
+
+\begin{document}
+\maketitle
+%	-----------------------------------------------------------------------------
+
+
+\input{_Template.tex}
+
+
+
+
+%	-----------------------------------------------------------------------------
+
+\newpage
+\printbibliography
+\end{document}
