@@ -1,13 +1,12 @@
 # apa7-md2latex
 
+[![hackmd-github-sync-badge](https://hackmd.io/y_0QmFQ2TO6rm7swFpaf_g/badge)](https://hackmd.io/y_0QmFQ2TO6rm7swFpaf_g)
+
+
 While working on my MBA for the University of Fredericton, I came up with a way of writing that fits my tech temperament.
 The writing process itself is very simple:
-
-```mermaid
-graph TD
-	write(Write in Markdown) --> translate(Translate to LaTeX<br>using Pandoc)
-	translate --> compile(Compile to PDF<br>latexmk or editor)
-```
+ 
+![](https://github.com/wrashi/apa7-md2latex/blob/main/md.png?raw=true)
 
 Several tools and processes are required to make it all work.
 Once mastered, though, the results are a stunning paper, properly formatted with no effort, every time.
@@ -44,9 +43,9 @@ Which is why writing in a simple format like Markdown and then translating it in
 Once you learn some LaTeX, though, you can sprinkle it throughout your document to great effect.
 Math like $e=mc^2$, for example, looks terrific when formatted in LaTeX.
 
-:::info
+**NB**
 Text editors like TextMate have great built-in LaTeX functionality (e.g. create PDF with `command-r`).
-:::
+
 
 
 ##  Why Use BibLaTeX?
